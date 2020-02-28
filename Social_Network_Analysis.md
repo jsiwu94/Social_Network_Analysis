@@ -3,63 +3,20 @@ Understanding The Effect of Social Network on Sales and Demand Spillover for Ama
 
 This post I am going to uncover the effect that social network has on
 the Amazon Book Sales. Social Network is a very powerful source in
-today’s business. Every
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+today’s business. 
 
     library(igraph)
-
-    ## 
-    ## Attaching package: 'igraph'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     decompose, spectrum
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     union
-
     library(dplyr)
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:igraph':
-    ## 
-    ##     as_data_frame, groups, union
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     library(sqldf)
-
-    ## Loading required package: gsubfn
-
-    ## Loading required package: proto
-
-    ## Loading required package: RSQLite
-
     library(ggplot2)
     library(psych)
 
-    ## 
-    ## Attaching package: 'psych'
-
-    ## The following objects are masked from 'package:ggplot2':
-    ## 
-    ##     %+%, alpha
 
 Looking at The Data
 -------------------
-
+    
+    head(purch1)
+    
     ##     Source Target
     ## 50      12    261
     ## 357     74    282
